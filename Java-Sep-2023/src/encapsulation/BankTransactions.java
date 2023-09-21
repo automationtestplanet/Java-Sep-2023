@@ -11,8 +11,6 @@ public class BankTransactions {
 		}else{
 			System.out.println("Deposit amount exceeds daily limit, Please deposit less than 200000");
 		}
-		
-		
 	}
 	
 	void withdrawl(int withdrawlAmount){
@@ -22,7 +20,6 @@ public class BankTransactions {
 		}else {
 			System.out.println("Insufficent Balance");
 		}
-		
 	}
 	
 	void checkBalance() {
