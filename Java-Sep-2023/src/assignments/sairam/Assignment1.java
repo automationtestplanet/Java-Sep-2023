@@ -9,14 +9,17 @@ public static void main(String[] args) {
 		
 		int int1 = Integer.parseInt(string1);
 		
-		System.out.println(int1);
+		
+		
+		
+		byte byte1 = (byte)int1;
 		
 
-		byte byte1 = 100;
 		
-		String string3 = String.valueOf(byte1);
-		System.out.println(string3);
-}
+		
+		String string2 = String.valueOf(byte1);
+		System.out.println(string2);
+  }
 }
 		
 		
