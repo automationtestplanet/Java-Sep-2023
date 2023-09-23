@@ -22,7 +22,7 @@ public class TypeCoversions {
 		
 		int int2 = int1; //int2 = 100
 		
-		byte byte2 = (byte)int1; //error
+		byte byte2 = (byte)int1; //error  
 //		
 //		short short2 = int1; //error
 //		
