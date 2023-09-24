@@ -11,8 +11,8 @@ public class Assignment1 {
 	
 	public static void main(String[] args) {
 		
-		String str= "Apple.Banana.Pomegranite.Watermelon";
-		String str1="\\.";
+		String str= "Apple*Banana*Pomegranit*Watermelon";
+		String str1="\\W";
 		String str2[]=str.split(str1);
 		//System.out.println(str);
 		System.out.println(str2.length);
