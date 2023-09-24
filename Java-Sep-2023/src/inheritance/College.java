@@ -6,6 +6,10 @@ public class College {
 	static String collegeName = "Mallareddy College";
 	static String collegeCode = "12345";
 	static String collegeLocation = "Hyderabad";
+	
+	void display() {
+		System.out.println("This is College Class");
+	}
 
 	void displayCollegeDetails() {
 		System.out.println("University Name: " + College.UNIVERSITY_NAME);
