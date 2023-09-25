@@ -1,21 +1,20 @@
 package polymorphism;
 
-public class OverloadingEx {
+public class ArithematicOperations {
 	
 	static int addition(int a, int b) {			
-//		System.out.println(a+b);
 		return a+b;
 	}
 	
-//	static long addition(int a, int b) {			
+//	static int addition(int a, int b) {			
 //		return a+b;
 //	}
-	
+//	
 	int addition(int a, int b, int c) {			
-		return this.addition(a,b) + c;
+		return addition(a,b) + c;
 	}
 	
-	String addition(String a, String b) {			
+	static String addition(String a, String b) {			
 		return a + " " +b;
 	}
 	
@@ -28,7 +27,6 @@ public class OverloadingEx {
 	}
 	
 	int substraction(int a, int b) {
-//		System.out.println(a-b);
 		return a-b;
 	}
 
@@ -43,12 +41,16 @@ public class OverloadingEx {
 	}
 	
 	static void display() {
+		System.out.println("Arithematic Operations Static DIsplay method");
+	}
+	
+	void display(int a) {
 		
 	}
 
 	public static void main(String[] args) {
 		
-		OverloadingEx overloadingEx = new OverloadingEx();
+		ArithematicOperations overloadingEx = new ArithematicOperations();
 		
 		System.out.println(overloadingEx.addition(10, 20));
 		
