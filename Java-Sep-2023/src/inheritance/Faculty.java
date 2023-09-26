@@ -10,6 +10,10 @@ public class Faculty extends Student {
 		System.out.println("Subject: "+ subject);
 	}
 	
+	void display() {
+		System.out.println("This is Faculty Class");
+	}
+	
 	public static void main(String[] args) {
 		Faculty faculty1 = new Faculty();
 		faculty1.displayCollegeDetails();

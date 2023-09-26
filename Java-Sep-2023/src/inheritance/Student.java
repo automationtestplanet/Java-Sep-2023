@@ -6,6 +6,9 @@ public class Student extends College {
 	int rollNo = 123;
 	String qualification = "B.Tech";
 	
+	void display() {
+		System.out.println("This is Student Class");
+	}
 	
 	void displayStudentDeils() {
 		System.out.println("Student Name: "+ this.studentName);
