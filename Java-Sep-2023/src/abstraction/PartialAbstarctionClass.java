@@ -8,8 +8,5 @@ public abstract class PartialAbstarctionClass {
 	
 	abstract void substraction();  //non-concrete method
 	
-//	public static void main(String[] args) {
-//		PratialAbstarctionClass pac = new PratialAbstarctionClass();
-//	}
 
 };
