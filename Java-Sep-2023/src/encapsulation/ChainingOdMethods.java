@@ -12,12 +12,10 @@ public class ChainingOdMethods {
 		.getFullDetails(personalDetails.setFirstName("RAM").setLastName("KUMAR"));
 		
 		System.out.println("----------------------------------------------------------");
+		
 		professionalDetails.setJobDesignation("Automation Test Engineer")
 		.setCompanyName("TCS")
 		.getFullDetails();
-		
-		
-		
 	}
 
 }
