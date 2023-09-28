@@ -8,9 +8,14 @@ import abstraction.AbstractCalculations;
 
  class AccessAbstractClass extends  ProvideAccessToAsbtractClass{
 
+	AccessAbstractClass(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
 	public static void main(String[] args) {
 		
-		AccessAbstractClass accAbsCls = new AccessAbstractClass();
+		AccessAbstractClass accAbsCls = new AccessAbstractClass("JAVA");
 		
 		ProvideAccessToAsbtractClass provAccABsCls = accAbsCls;  // upcasting
 		
@@ -18,7 +23,7 @@ import abstraction.AbstractCalculations;
 		
 		AbstractCalculations absCls = accAbsCls;
 		
-		AbstractCalculations absCls1 = new AccessAbstractClass();
+		AbstractCalculations absCls1 = new AccessAbstractClass("JAVA");
 		
 		System.out.println(absCls1.addition(10, 20));
 		
