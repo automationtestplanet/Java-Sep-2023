@@ -47,6 +47,11 @@ public class ArithematicOperations {
 	void display(int a) {
 		
 	}
+	
+	int modDivision(int a, int b) {
+		System.out.println(a%b);
+		return a%b;
+	}
 
 	public static void main(String[] args) {
 		

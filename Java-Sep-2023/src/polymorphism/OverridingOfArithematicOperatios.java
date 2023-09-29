@@ -14,6 +14,12 @@ public class OverridingOfArithematicOperatios extends ArithematicOperations{
 		return a+b+c+d;
 	}
 	
+	@Override
+	int modDivision(int a, int b) {
+		System.out.println(a%b);
+		return a%b+10;
+	}
+	
 	public static void main(String[] args) {
 		
 		OverridingOfArithematicOperatios overridingEx = new OverridingOfArithematicOperatios();
@@ -52,6 +58,8 @@ public class OverridingOfArithematicOperatios extends ArithematicOperations{
 		System.out.println("Additon of numbers with parent reference: "+arOp2.addition(10, 20));
 		OverridingOfArithematicOperatios overridingEx2 = (OverridingOfArithematicOperatios)arOp2;
 		System.out.println("Additon of numbers with child reference: "+overridingEx2.addition(10, 20));
+		
+		System.out.println(overridingEx.modDivision(10, 3));
 		
 	}
 
