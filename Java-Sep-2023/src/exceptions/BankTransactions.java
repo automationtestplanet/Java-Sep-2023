@@ -1,6 +1,7 @@
 package exceptions;
 
 
+
 public class BankTransactions {
 	static int balance = 100000;
 

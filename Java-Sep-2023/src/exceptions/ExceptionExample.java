@@ -1,6 +1,7 @@
 package exceptions;
 
 public class ExceptionExample {
+
 	
 	static int division(int a, int b) {
 		try {

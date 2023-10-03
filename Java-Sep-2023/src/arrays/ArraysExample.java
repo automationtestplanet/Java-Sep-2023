@@ -2,6 +2,7 @@ package arrays;
 
 public class ArraysExample {
 
+
 	public static void main(String[] args) {
 	
 		int a = 100;
