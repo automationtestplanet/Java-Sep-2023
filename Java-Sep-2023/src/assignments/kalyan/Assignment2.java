@@ -4,28 +4,27 @@ public class Assignment2 {
 
 	// Write a program to check whether the number is Prime number or not
 
-	int primenumber(int n) {
-		
-		for (int i = 2; i <= n / 2; i++) {
-			 
-	        
-	        if (n % i == 0) {
-	        	System.out.println("given number is prime number");
-	        }
+	void primenumber(int num) {
+		boolean flag = false;
+		for (int i = 2; i <= num / 2; ++i) {
 
-
-		else {
-			System.out.println("given number is not a prime number");
+			if (num % i == 0) {
+				flag = true;
+				break;
+			}
 		}
-		
+
+		if (!flag)
+			System.out.println(num + " is a prime number.");
+		else
+			System.out.println(num + " is not a prime number.");
 	}
-		return n;
-	}
+
 	public static void main(String[] args) {
 
 		Assignment2 as2 = new Assignment2();
 
-		as2.primenumber(10);
+		as2.primenumber(32);
 
 	}
 }
