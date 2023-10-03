@@ -2,6 +2,11 @@ package abstraction;
 
 class ImplementAbstractClassMethods extends AbstractCalculations{
 
+	public ImplementAbstractClassMethods(String name) {
+		super(name);
+		
+	}
+
 	@Override
 	public int substraction(int a, int b) {
 		return a-b;
