@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-public class ListColletion {
+public class ColletionsEx {
 
 	public static void main(String[] args) throws IOException {
 		
