@@ -1,6 +1,7 @@
 package exceptions;
 
 public class ExceptionExample {
+<<<<<<< Updated upstream
 
 	
 	static int division(int a, int b) {
@@ -60,3 +61,29 @@ public class ExceptionExample {
 	}
 
 }
+=======
+	static int division(int a, int b) {
+		try {return a/b;}catch(Exception obj) {
+			System.out.println(a+""+obj.getMessage()+ "is not possible");
+			
+			System.out.println("alternate solution is dividing by 1");	
+		}
+		return a/1;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Starting division method execution");
+		try {
+		System.out.println(division(2,0));
+//		 Exception arEx = new ArithmeticException();
+		
+		}catch(ArithmeticException obj) {
+//			obj.printStackTrace()
+//			System.out.println(a+obj.getMessage()+ "is not possible");
+//			System.out.println("alternate solution is dividing by 1");
+		}
+		System.out.println(division(10,2));
+		System.out.println(division(2,0));
+	}
+}
+>>>>>>> Stashed changes
