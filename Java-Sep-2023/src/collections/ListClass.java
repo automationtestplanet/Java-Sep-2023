@@ -28,7 +28,7 @@ public class ListClass {
 		
 		System.out.println(arraylist1.get(arraylist1.size()-1));
 		
-		Collections.sort(arraylist1);
+		Collections.sort(arraylist1); //sort
 		
 		System.out.println(arraylist1);
 		
