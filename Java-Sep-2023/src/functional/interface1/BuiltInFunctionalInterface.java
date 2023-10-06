@@ -127,6 +127,20 @@ public class BuiltInFunctionalInterface {
 		
 		System.out.println("---------------------After Sorting with Comparator Funcational Interface------------------------");
 		studentsList.forEach(studentObj -> {System.out.println(studentObj.getRollNo()+" "+studentObj.getName());});
+		
+		
+		System.out.println("-------------------BunryOperator----------------------------------");
+		BinaryOperator<Integer> binaryOperator1 = new BinaryOperator<Integer>() {
+			@Override
+			public Integer apply(Integer t, Integer u) {
+				
+				return t+u;
+			}
+		};		
+		System.out.println(binaryOperator1.apply(100, 200));
+		
+		BinaryOperator<Integer> binaryOperator2 = (a, b) -> {return a+b;};
+		System.out.println(binaryOperator2.apply(100,200));
 
 	}
 
