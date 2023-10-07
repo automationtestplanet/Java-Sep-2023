@@ -20,16 +20,13 @@ public class Assignment1 {
 		if (alphaNumericString.length() == 0) {
 			return 0;
 		} else {
-
 			int result = 0;
 			if (alphaNumericString.replaceAll("[^0-9]", "").length() > 0) {
 				for (char eachChar : alphaNumericString.replaceAll("[^0-9]", "").toCharArray()) {
 					result = result + (eachChar - '0');
 				}
-				return result;
-			} else {
-				return result;
 			}
+			return result;
 		}
 	}
 
