@@ -17,8 +17,8 @@ public class Calculator {
 		return a*b;
 	}
 
-	private int division() {
-		System.out.println("Division Private method: "+10/3);
-		return 10/3;
+	private int division(int a, int b) {
+		System.out.println("Division Private method: "+a/b);
+		return a/b;
 	}
 }

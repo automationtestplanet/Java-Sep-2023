@@ -24,21 +24,19 @@ public class ReflectionExample {
 			if(methodName.equals("modDivision")) {
 				eachMehod.invoke(calc, values);
 			}else {
-				Method[] methodName2 = Calculator2.class.getMethods();
-				for(Method eachMehod1:methodName2) {
-					String methodName1 = eachMehod1.getName();
-					if(methodName1.equals("modDivision")) {						
-						eachMehod1.invoke(calc2, values);
-					}
-				}
+				Method modDivMethod = Calculator2.class.getDeclaredMethod("modDivision", new Class[] {int.class,int.class});
+				modDivMethod.invoke(calc2, values);
 				break;
 			}			
 		}
+		
+		int[] intArr = {10,20,30};		
+		int[] intArr2 = new int[]{10,20,30};
+		Class[] clsArr = new Class[] {int.class,int.class};
 				
-		Object[] values2 = {};
-		Method division = Calculator.class.getDeclaredMethod("division");
+		Method division = Calculator.class.getDeclaredMethod("division",clsArr);
 		division.setAccessible(true);
-		division.invoke(calc, values2);
+		division.invoke(calc, values);
 
 	}
 
