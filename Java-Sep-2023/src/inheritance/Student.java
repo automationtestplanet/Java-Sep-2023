@@ -16,13 +16,13 @@ public class Student extends College {
 		System.out.println("Student Qualification: "+ this.qualification);
 	}
 	
-    public static void main(String[] args) {
-    	Student student1 = new Student();
-    	student1.displayStudentDeils();
-    	
-//    	College college1 = new College();
-//    	college1.displayCollegeDetails();
+//    public static void main(String[] args) {
+//    	Student student1 = new Student();
+//    	student1.displayStudentDeils();
+//    	
+////    	College college1 = new College();
+////    	college1.displayCollegeDetails();
 //    	
 ////    	student1.displayCollegeDetails();
-	}	
+//	}	
 }

@@ -7,10 +7,6 @@ public class College {
 	static String collegeCode = "12345";
 	static String collegeLocation = "Hyderabad";
 	
-	College(){
-		
-	}
-	
 	void display() {
 		System.out.println("This is College Class");
 	}
