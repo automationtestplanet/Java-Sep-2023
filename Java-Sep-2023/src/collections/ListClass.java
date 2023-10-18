@@ -85,6 +85,11 @@ public class ListClass {
 		for(Object eachValue:arraylist2) {
 			System.out.println(eachValue);
 		}
+		
+		
+		
+		System.out.println("---------------------------For each loop with membership operator :: print -----------------------");
+		linkedList1.stream().forEach(System.out::println);
 	}
 
 }

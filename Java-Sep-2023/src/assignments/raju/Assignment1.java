@@ -16,7 +16,6 @@ public class Assignment1 {
 	 * @return
 	 */
 	public static int filterTheNumberAndMakeTheSum(String alphaNumericString) {
-
 		if (alphaNumericString.length() == 0) {
 			return 0;
 		} else {
